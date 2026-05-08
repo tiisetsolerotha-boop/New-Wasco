@@ -1,0 +1,14 @@
+{
+  "name": "wasco-app",
+  "version": "1.0.0",
+  "description": "WASCO Distributed Water Bill Management System",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\" --names \"BACKEND,FRONTEND\" --prefix-colors \"cyan,magenta\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
