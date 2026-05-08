@@ -24,7 +24,8 @@ app.use(helmet());
 app.use(cors({
   origin: [
     process.env.FRONTEND_URL || 'http://localhost:5173',
-    'https://wasco-app.vercel.app',
+    'https://new-wasco.vercel.app',
+    /^https:\/\/new-wasco.*\.vercel\.app$/
   ],
   credentials: true,
 }));
